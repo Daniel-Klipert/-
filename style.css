@@ -1,0 +1,161 @@
+* {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    color: #3b3b3b;
+    list-style: none;
+    scroll-behavior: smooth;
+    scroll-margin: -12vh;
+    box-sizing: border-box;
+}
+
+.menu {
+    background-color: #f0f8ff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 12vh;
+    z-index: 2;
+}
+
+.menu ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.menu ul li {
+    color: #3b3b3b7f;
+    margin: auto;
+    font-size: 34px;
+}
+.menu a{
+    position: relative;
+}
+a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #3b3b3b;
+}
+
+.wrapper div {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+
+}
+
+header {
+    position: relative;
+    margin-top: 12vh;
+    width: 100%;
+    height: 55vh;
+    display: flex;
+}
+
+header .text {
+    color: white;
+    background-color: #3b3b3b7f;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    z-index: 1;
+
+}
+
+header .slider {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.text h1,
+.text p {
+    color: white;
+}
+
+.text h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.text p {
+    font-size: 35px;
+    font-weight: 700;
+
+}
+
+section {
+    height: 135vh;
+    padding: 2px;
+
+    background-color: #e9e6e2;
+    border: #3b3b3b7f solid 2px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: black;
+    transition: 0.2s;
+}
+
+.group {
+    padding: 20px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f8ff;
+    box-shadow: 10px 10px 20px 3px #3b3b3b;
+    cursor: pointer;
+
+}
+
+.group p {
+    margin: 30px;
+}
+
+.group h3 {
+    text-align: end;
+}
+
+section img {
+    width: 30%;
+    margin: 50px;
+    box-shadow: 10px 10px 20px 3px #3b3b3b;
+    cursor: pointer;
+}
+
+section.active {
+    box-shadow: 0px 0px 10px 10px #3b3b3b7f inset;
+}
+
+section.activenext {
+    box-shadow: 0px 100px 57px -44px #3b3b3b29 inset;
+}
+
+section.activebefore {
+    box-shadow: 0px -100px 57px -44px #3b3b3b29 inset;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: #3b3b3b7f;
+    color: black;
+    font-size: 36px;
+}
